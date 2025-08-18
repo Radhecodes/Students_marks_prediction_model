@@ -19,7 +19,7 @@ from src.logger import logging
 
 from src.utils import save_object,evaluate_models
 
-@dataclass
+@dataclass #helps in making instance specific MUTABLE attributes independent
 class ModelTrainerConfig:
     trained_model_file_path=os.path.join("artifacts","model.pkl")#no constructor needed because the path is fixed, we dont need to change it on runtime eg: through user input
 
